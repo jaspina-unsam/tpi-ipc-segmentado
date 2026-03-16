@@ -11,7 +11,9 @@ El sentimiento social de que la inflación no representa eficientemente lo que s
 ## papers a estudiar
 
 [Distributional Consumer Price Indices (Xavier Jaravel)](https://events.berkeley.edu/live/files/26-dcpipdf)
+
 [Distributional Impacts of Inflation Accounting for Behavioral Effects and Real Assets (Cicek et al)](https://www.imf.org/-/media/files/publications/wp/2026/english/wpiea2026022-source-pdf.pdf)
+
 [Sesgos en el Índice de Precios al Consumidor: El Sesgo Plutocrático en Argentina (Lódola, Busso, Cerimedo)](https://cdi.mecon.gob.ar/bases/doc/aaep/cong/00/lodola_busso_cerimedo.pdf)
 
 ## Pregunta central
