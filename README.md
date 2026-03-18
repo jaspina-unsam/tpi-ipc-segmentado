@@ -61,3 +61,22 @@ Tres cosas que este trabajo haría que no están hechas juntas para Argentina:
 1. Construir IPCs segmentados con datos recientes usando clustering en lugar de categorías administrativas
 2. Revaluar la pérdida salarial real con esos índices personalizados
 3. Mostrar que el debate "la inflación subió/bajó" es incompleto sin especificar *para quién*
+
+
+---
+
+## brainstorming
+
+Jaraval y Lodola et al hablan de IPC distribuido por decil de ingresos. Ambos encuentran como resultado que el IPC distribuido muestra de manera desagregada los índices de inflacion para cada segmento de la población. De nuevo, esto si consideramos sólo a la población según decil de ingresos.
+
+La idea es obtener de la EPH y de la ENGH grupos más complejos con ayuda de ML y a estos grupos darle su propio IPC, según su canasta de gastos.
+
+Con la serie de tiempo de cada IPC de cada grupo el siguiente paso sería deflactar el ingreso y analizar la variación del poder adquisitivo.
+
+Surgen muchas preguntas...
+
+1. Del EPH, uso los microdatos individuales o de hogar?
+2. Cómo me ayuda o complementa la EPH con la ENGHo?
+3. Cómo conecto los grupos/clusters que encontramos con ML con las categorías que tengo de la canasta del IPC?
+
+Y muchas otras más que iran surgiendo...
