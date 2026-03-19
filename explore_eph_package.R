@@ -1,11 +1,9 @@
-install.packages("eph")
-
 library(eph)
 library(tidyverse)
 
 eph_ind_2025_3 <- get_microdata(
-  year = 2025,
-  trimester = 3,
+  year = 1996,
+  trimester = 1,
   type = "individual"
 )
 
@@ -33,7 +31,7 @@ vars_select <- c(
 
 eph_ind_2025_3_select <- get_microdata(
   year = 2025,
-  trimester = 3,
+  trimester = 1,
   vars = vars_select,
   type = "individual"
 )
@@ -104,3 +102,5 @@ pool <- organize_panels(
   variables = vars_select,
   window = "trimestral"
 )
+
+
