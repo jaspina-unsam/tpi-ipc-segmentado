@@ -29,11 +29,11 @@ vars_select = c(
 )
 
 base_ind <- get_microdata(
-  year = 2004:2024,
+  year = 2003,
   trimester = 1:4,
   vars = vars_select
 )
 
 base_ind <- base_ind %>% organize_labels() %>% organize_caes() %>% organize_cno()
 
-write_parquet(base_ind, "data/base_ind_2004-2024.parquet")
+write_parquet(base_ind, "data/base_ind_2003.parquet")

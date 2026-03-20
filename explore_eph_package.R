@@ -24,6 +24,8 @@ vars_select <- c(
   "PP04D_COD",
   "P21",
   "ITF",
+  "CH08",
+  "PP07H",
   "PONDERA",
   "PONDIIO",
   "PONDIH"
