@@ -4,13 +4,13 @@
 \usepackage[spanish]{babel}
 
 % Selección del tema
-\usetheme{Madrid} 
-\usecolortheme{default}
+\usetheme{Rochester}
+\usecolortheme{seagull}
+\beamertemplatenavigationsymbolsempty
 
 % Información del título
-\title[Inflación y poder adquisitivo]{Inflación heterogénea y poder adquisitivo en Argentina}
-\subtitle{Cuando los precios suben, ¿todos pierden igual?}
-%\subtitle{¿De quién es esta inflación?} % Alternativa para el subtítulo
+\title[Inflación y poder adquisitivo]{Inflación heterogénea\\y poder adquisitivo en Argentina}
+\subtitle{Cuando los precios suben, ¿todos pierden por igual?}
 \author{Javier Spina}
 \institute{ECyT - UNSAM}
 \date{27 de marzo de 2026}
@@ -49,11 +49,6 @@
         \item Quien gasta el 50\% en alimentos enfrenta una inflación 
         \textbf{distinta} a quien gasta el 50\% en servicios o alquiler.
     \end{itemize}
-    \vspace{0.5em}
-    \begin{block}{}
-        Deflactar salarios con un único IPC distorsiona quién pierde 
-        y cuánto. ¿Hay una inflación para cada perfil de trabajador?
-    \end{block}
 \end{frame}
 
 
@@ -71,15 +66,13 @@
         \column{0.5\textwidth}
         \textbf{Eje distributivo}
         \begin{itemize}
-            \item Distintos perfiles de trabajadores tienen 
-            \textbf{estructuras de gasto distintas}.
-            \item Las canastas de consumo evolucionan \textbf{de forma distinta} según el perfil del trabajador.
+            \item Distintos perfiles tienen \textbf{estructuras de gasto distintas}.
+            \item Las canastas de consumo evolucionan \textbf{de manera única} según cohortes demográficas.
         \end{itemize}
     \end{columns}
     \vspace{0.5em}
     \begin{block}{}
-        ¿Qué pasa cuando le asignamos a cada trabajador 
-        su propia inflación?
+        Hay datos para responder estas preguntas.
     \end{block}
 \end{frame}
 
@@ -196,8 +189,12 @@
     \vspace{0.5em}
     \begin{itemize}
         % \item El IPC oficial promedia y \textbf{oculta heterogeneidad distributiva}
-        \item Distintos perfiles enfrentan \textbf{inflaciones reales distintas} según su estructura de gasto
-        \item Deflactar salarios con el IPC propio de cada perfil \textbf{cambia el diagnóstico} de quién pierde y cuánto
+        % \item Distintos perfiles enfrentan \textbf{inflaciones reales distintas} según su estructura de gasto
+        % \item Deflactar salarios con un único IPC distorsiona quién pierde y cuánto.
+        % \item ¿Qué pasa cuando le asignamos a cada trabajador su propia inflación?
+        \item Deflactar salarios con un único IPC distorsiona quién pierde y cuánto.
+        \item Cada trabajador tiene su propia canasta, \textbf{su propia inflación}.
+        \item Clustering para \textbf{descubrir los perfiles} que emergen de los datos.
     \end{itemize}
 \end{frame}
 
