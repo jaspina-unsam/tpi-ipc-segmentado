@@ -3,12 +3,10 @@
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 
-% Selección del tema
 \usetheme{Rochester}
 \usecolortheme{seagull}
 \beamertemplatenavigationsymbolsempty
 
-% Información del título
 \title[Inflación y poder adquisitivo]{Inflación heterogénea\\y poder adquisitivo en Argentina}
 \subtitle{Cuando los precios suben, ¿todos pierden por igual?}
 \author{Javier Spina}
@@ -17,28 +15,9 @@
 
 \begin{document}
 
-% Diapositiva de título
 \begin{frame}
     \titlepage
 \end{frame}
-
-% Índice de contenidos
-% \begin{frame}{Índice}
-%     \tableofcontents
-% \end{frame}
-
-
-% \section{Introducción}
-% \begin{frame}{Introducción}
-%     \begin{block}{El sesgo de la inflación}
-%         El IPC es un promedio que oculta la desigualdad.
-%     \end{block}
-%     \begin{itemize}
-%         \item La inflación en Argentina es un fenómeno cotidiano y estructural — aparece en el debate público, en los medios, en las paritarias, en la política.
-%         \item El IPC oficial pondera el gasto de ``un hogar promedio'' que no existe. Una familia que gasta el 40\% en alimentos tiene una experiencia de inflación distinta a otra que gasta el 40\% en servicios.
-%         \item Deflactar salarios con ese IPC único distorsiona quién pierde y quién no en términos reales.
-%     \end{itemize}
-% \end{frame}
 
 
 \section{Introducción}
@@ -46,7 +25,7 @@
     \begin{itemize}
         \item La inflación en Argentina es \textbf{persistente y recurrente}: un fenómeno que atraviesa el debate público y la vida cotidiana.
         \item El IPC oficial pondera \textbf{``un hogar promedio'' que no existe}.
-        \item Quien gasta el 50\% en alimentos enfrenta una inflación 
+        \item Quien gasta el 50\% en alimentos enfrenta una inflación
         \textbf{distinta} a quien gasta el 50\% en servicios o alquiler.
     \end{itemize}
 \end{frame}
@@ -54,25 +33,21 @@
 
 \section{Contexto del problema}
 \begin{frame}{Contexto del problema}
-    \begin{columns}
-        \column{0.5\textwidth}
-        \textbf{Eje macroeconómico}
-        \begin{itemize}
-            \item Historia de alta inflación y shocks económicos.
-            \item Los salarios nominales suben, pero 
-            \textbf{¿suben para todos por igual?}
-        \end{itemize}
-
-        \column{0.5\textwidth}
-        \textbf{Eje distributivo}
-        \begin{itemize}
-            \item Distintos perfiles tienen \textbf{estructuras de gasto distintas}.
-            \item Las canastas de consumo evolucionan \textbf{de manera única} según cohortes demográficas.
-        \end{itemize}
-    \end{columns}
+    \begin{itemize}
+        \item Historia de alta inflación y shocks económicos.
+        \item Las estructuras de gasto varían y evolucionan de forma 
+        \textbf{distinta} según el perfil de cada trabajador.
+        \item Los sectores de menores ingresos pierden poder adquisitivo 
+        en ambos contextos: en \textbf{alta inflación} porque sus canastas 
+        suben más, en \textbf{baja inflación} porque el IPC no representa 
+        su gasto.
+        \item La metodología de medición del INDEC se basa en canastas 
+        de 2004. La actualización prevista \textbf{no se implementó}.
+        \item Muchos asalariados formales estan cayendo bajo la linea de pobreza, incluso midiendo con el IPC oficial.
+    \end{itemize}
     \vspace{0.5em}
     \begin{block}{}
-        Hay datos para responder estas preguntas.
+        Hay datos para estudiar esto con mayor precisión.
     \end{block}
 \end{frame}
 
@@ -82,12 +57,12 @@
     \begin{table}
         \centering
         \small
-        \begin{tabular}{lll}
+        \begin{tabular}{ll}
             \hline
             \textbf{Perfil} & \textbf{Gasto dominante}\\
             \hline
             Trabajadora informal, NOA & Alimentos\\
-            Empleado formal, Patagonia & Vivienda y servicios (tarifas regionales) \\
+            Empleado formal, Patagonia & Vivienda y servicios\\
             Docente universitario, CABA & Alimentos y alquiler\\
             Profesional independiente, Cuyo & Servicios y esparcimiento\\
             \hline
@@ -101,86 +76,6 @@
 
 \end{frame}
 
-
-% \section{Ejemplos y casos de uso}
-% \begin{frame}{Ejemplos y casos de uso}
-
-%     \begin{columns}[T]
-%         \column{0.33\textwidth}
-%         \centering
-%         \textbf{Trabajadora informal}\\
-%         \textbf{GBA}
-%         \vspace{0.3em}
-%         \begin{itemize}
-%             \item Mayor proporción del gasto en alimentos
-%             \item Inflación \textbf{más alta} que el IPC oficial
-%         \end{itemize}
-
-%         \column{0.33\textwidth}
-%         \centering
-%         \textbf{Empleado formal}\\
-%         \textbf{Patagonia}
-%         \vspace{0.3em}
-%         \begin{itemize}
-%             \item Mayor proporción del gasto en vivienda y servicios
-%             \item Inflación \textbf{distinta} según tarifas regionales
-%         \end{itemize}
-
-%         \column{0.33\textwidth}
-%         \centering
-%         \textbf{Docente universitario}\\
-%         \textbf{CABA}
-%         \vspace{0.3em}
-%         \begin{itemize}
-%             \item Perdió \textbf{más del 30\%} de poder adquisitivo desde 2023
-%             \item El \textbf{87\%} cobra por debajo de la línea de pobreza
-%         \end{itemize}
-%     \end{columns}
-
-%     \vspace{0.5em}
-%     \begin{block}{}
-%         El mismo IPC oficial para los tres. ¿Tiene sentido?
-%     \end{block}
-
-% \end{frame}
-
-% \section{Ejemplos y casos de uso}
-% \begin{frame}{Ejemplos y casos de uso}
-
-% \begin{columns}[T]
-%     \column{0.33\textwidth}
-%     \centering
-%     \textbf{Trabajadora informal}\\
-%     \textbf{GBA}
-%     \vspace{0.3em}
-%     \begin{itemize}
-%         \item Salario cubre el \textbf{74\% de la canasta alimentaria}
-%         \item Alimentos: el rubro que \textbf{más pesa} en su gasto
-%     \end{itemize}
-
-%     \column{0.33\textwidth}
-%     \centering
-%     \textbf{Empleado formal}\\
-%     \textbf{sector privado}
-%     \vspace{0.3em}
-%     \begin{itemize}
-%         \item Mayor peso en \textbf{servicios y transporte}
-%         \item Rubros que subieron \textbf{muy por encima} del IPC en 2024
-%     \end{itemize}
-
-%     \column{0.33\textwidth}
-%     \centering
-%     \textbf{Docente universitario}\\
-%     \textbf{AMBA}
-%     \vspace{0.3em}
-%     \begin{itemize}
-%         \item Perdió \textbf{más del 30\%} de poder adquisitivo desde 2023
-%         \item El \textbf{87\%} cobra por debajo de la línea de pobreza
-%     \end{itemize}
-% \end{columns}
-% \end{frame}
-
-
 \section{Definición del problema}
 \begin{frame}{Definición del problema}
     \begin{block}{Pregunta central}
@@ -188,10 +83,6 @@
     \end{block}
     \vspace{0.5em}
     \begin{itemize}
-        % \item El IPC oficial promedia y \textbf{oculta heterogeneidad distributiva}
-        % \item Distintos perfiles enfrentan \textbf{inflaciones reales distintas} según su estructura de gasto
-        % \item Deflactar salarios con un único IPC distorsiona quién pierde y cuánto.
-        % \item ¿Qué pasa cuando le asignamos a cada trabajador su propia inflación?
         \item Deflactar salarios con un único IPC distorsiona quién pierde y cuánto.
         \item Cada trabajador tiene su propia canasta, \textbf{su propia inflación}.
         \item Clustering para \textbf{descubrir los perfiles} que emergen de los datos.
@@ -205,7 +96,7 @@
         \item \textbf{Jaravel (2024)} --- \textit{Distributional Consumer Price Indices}\\
         Construye D-CPIs por perfil sociodemográfico y muestra que la desigualdad real creció un 45\% más rápido de lo que indica el IPC oficial.
         \vspace{0.4em}
-        \item \textbf{Lódola, Busso y Cerimedo} --- \textit{Sesgos en el IPC: el sesgo plutocrático en Argentina}\\
+        \item \textbf{Lódola, Busso y Cerimedo (2000)} --- \textit{Sesgos en el IPC: el sesgo plutocrático en Argentina}\\
         IPC por decil en alta inflación. La inflación alta tuvo comportamiento anti-rico. La inflación nominal baja tuvo comportamiento anti-trabajador.
         \vspace{0.4em}
         \item \textbf{Deaton (1985)} --- \textit{Panel data from time series of cross-sections}\\

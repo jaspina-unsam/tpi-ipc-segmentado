@@ -21,11 +21,13 @@
 
 
 ### SLIDE 3 — Contexto
-- Macro: los salarios suben, pero ¿para todos igual?
-- Distributivo: las canastas son distintas según quién sos y dónde vivís
-- Hay datos para responder esto con más precisión — nadie lo hizo así todavía
+- Historia de inflación y shocks: el paisaje económico de las últimas décadas
+- Las canastas son distintas según quién sos y dónde vivís
+- En alta inflación pierden más los pobres, en baja inflación el IPC los invisibiliza — en los dos escenarios salen perdiendo
+- El INDEC mide con canastas de 2004, la actualización no se implementó
+- Hay sectores que sistemáticamente pierden y otros que ganan, pero no sabemos quiénes ni cuánto
 
-"El problema tiene dos dimensiones. Por un lado, el eje macroeconómico: Argentina tiene una historia larga de alta inflación y shocks económicos. Los salarios nominales suben, sí, pero la pregunta es si suben para todos por igual. Por otro lado, el eje distributivo: distintos grupos de trabajadores tienen estructuras de gasto distintas. Una trabajadora informal del NOA no gasta igual que un profesional independiente en Cuyo. Sus canastas de consumo evolucionan de manera diferente. Y sin embargo, a los dos se les aplica el mismo índice para medir cuánto perdieron. Hay datos para responder esta pregunta con más precisión — pero nadie lo hizo así todavía."
+"Argentina tiene una historia larga de alta inflación y shocks económicos. Pero el problema no es solo macroeconómico — tiene una dimensión distributiva que el debate público suele ignorar. Una trabajadora informal del NOA no gasta igual que un profesional en Cuyo. Sus canastas son distintas, y evolucionan de forma distinta. Y hay algo más: los sectores de menores ingresos pierden en los dos escenarios. En alta inflación porque sus canastas suben más rápido. En baja inflación porque el IPC está construido sobre canastas de 2004 que no los representan — y la actualización prevista no se implementó. El resultado es que hay sectores que sistemáticamente pierden poder adquisitivo y otros que ganan, pero no sabemos quiénes son ni cuánto. Los datos existen. La pregunta es cómo usarlos."
 
 #### Contexto → Ejemplos
 > "Para hacer esto concreto, pensemos en personas reales."
