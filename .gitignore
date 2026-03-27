@@ -210,3 +210,23 @@ __marimo__/
 
 # macos
 .DS_Store
+
+# LaTeX (Beamer) build files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
