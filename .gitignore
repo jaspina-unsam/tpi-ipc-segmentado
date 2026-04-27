@@ -230,8 +230,3 @@ __marimo__/
 *.synctex.gz
 *.toc
 *.vrb
-
-# Data Files
-*.parquet
-*.csv
-*.pdf
