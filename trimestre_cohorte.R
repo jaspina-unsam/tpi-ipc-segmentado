@@ -11,15 +11,15 @@ vars_select = c(
   "REGION",
   "AGLOMERADO",
   "PONDERA",
-  # "PONDII",
-  # "PONDIIO",
+  "PONDII",
+  "PONDIIO",
   "CH04",
   "CH06",
   "NIVEL_ED",
   "ESTADO",
   "CAT_OCUP",
   "CAT_INAC",
-  # "EMPLEO",
+  "EMPLEO",
   "PP07H",
   "CH08",
   "P21",
@@ -29,11 +29,11 @@ vars_select = c(
 )
 
 base_ind <- get_microdata(
-  year = 2003,
+  year = 2025,
   trimester = 1:4,
   vars = vars_select
 )
 
 base_ind <- base_ind %>% organize_labels() %>% organize_caes() %>% organize_cno()
 
-write_parquet(base_ind, "data/base_ind_2003.parquet")
+write_parquet(base_ind, "data/base_ind_2025.parquet")
