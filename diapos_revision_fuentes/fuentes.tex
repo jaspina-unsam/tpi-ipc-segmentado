@@ -1,0 +1,114 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[normalem]{ulem}
+\usepackage{graphicx}
+
+\usetheme{Rochester}
+\usecolortheme{seagull}
+\beamertemplatenavigationsymbolsempty
+
+\title[Inflación y poder adquisitivo]{Inflación heterogénea\\y poder adquisitivo en Argentina}
+\subtitle{Revisión de Fuentes}
+\author{Javier Spina}
+\institute{ECyT - UNSAM}
+\date{8 de mayo de 2026}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+
+\section{Selección de Papers}
+\begin{frame}{¿Dónde estábamos?}
+    \begin{itemize}
+        \item \textbf{Jaravel (2024)} --- \textit{Distributional Consumer Price Indices}\\
+              Construye D-CPIs por perfil sociodemográfico y muestra que la desigualdad real creció un 45\% más rápido de lo que indica el IPC oficial.
+              \vspace{0.4em}
+        \item \textbf{Lódola, Busso y Cerimedo (2000)} --- \textit{Sesgos en el IPC: el sesgo plutocrático en Argentina}\\
+              IPC por decil en alta inflación. La inflación alta tuvo comportamiento anti-rico. La inflación nominal baja tuvo comportamiento anti-trabajador.
+              \vspace{0.4em}
+        \item \textbf{Deaton (1985)} --- \textit{Panel data from time series of cross-sections}\\
+              Fundamento metodológico del seguimiento de cohortes poblacionales y su evolución en el tiempo a traves de la media del grupo (pseudo-panel).
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Scope, scope, scope}
+\centering\includegraphics[height=0.95\textheight]{the_real_scope.png}
+\end{frame}
+
+\begin{frame}{Scope, scope, scope}
+    \begin{itemize}
+        \item \textbf{Jaravel (2024)} --- \textit{Distributional Consumer Price Indices}
+              \vspace{0.4em}
+        \item \textbf{Lódola, Busso y Cerimedo (2000)} --- \textit{Sesgos en el IPC: el sesgo plutocrático en Argentina}
+              \vspace{0.4em}
+        \item \sout{\textbf{Deaton (1985)} --- \textit{Panel data from time series of cross-sections}}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Dos marcos teóricos}
+    \begin{itemize}
+        \item Ciencia de Datos
+        \begin{itemize}
+            \item \textbf{Suzuki (2020)} --- \textit{The Latent Structure of the Japanese Labor Market and the Type of Employment}
+                \vspace{0.4em}
+            \item \textbf{Donatiello et al (2014)} --- \textit{Statistical Matching of Income and Consumption Expenditures}
+                \vspace{0.4em}
+            \item \textbf{Schneider y Scharfenaker (2020)} --- \textit{Mixing It Up. The Case for Finite Mixture Models to Study the Distribution of Income}
+                \vspace{0.4em}
+            \item \textbf{INDEC} --- \textit{Documentación técnica y diseño de registros}
+                \vspace{0.8em}
+        \end{itemize}
+        \item Ciencias Económicas
+        \begin{itemize}
+            \item \textbf{Jaravel (2024)} --- \textit{Distributional Consumer Price Indices}
+              \vspace{0.4em}
+            \item \textbf{Lódola, Busso y Cerimedo (2000)} --- \textit{Sesgos en el IPC: el sesgo plutocrático en Argentina}
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+\section{El dominio económico}
+\begin{frame}{¿Por qué IPC distribuido? ¿Por qué perfiles?}
+citas de Jaravel y Lódola que justifiquen el estudio del problema.
+citas que habiliten la búsqueda de distintos cortes poblacionales
+\end{frame}
+
+\section{Propuestas de Ciencia de Datos}
+\begin{frame}{¿Qué aporte podemos hacer?}
+composición de metodologías
+- relato del trabajo de Suzuki
+- relato del trabajo de Donatiello
+\end{frame}
+
+\begin{frame}{La propuesta metodológica}
+gráfico de diseño/arquitectura metodológica
+\end{frame}
+
+\begin{frame}{Los datos}
+Reseña de EPH y ENGHo
+\end{frame}
+
+\section{Sobre los resultados}
+\begin{frame}{Resuldatos documentados en las fuentes}
+Output de Suzuki y Donatiello
+\end{frame}
+
+\begin{frame}{Expectativas y validaciones}
+\small{- El foco del trabajo estará puesto en las metodologías de ciencia de datos y su potencial como herramienta de análisis de los artefactos estadísticos del INDEC. A priori, obtener resultados robustos desde la lógica interna de la ciencia de datos es un punto de partida fundamental para que puedan ser integrados en investigaciones de ciencias sociales y ciencias económicas.\\
+- Si logro replicar la tendencia de los resultados de Lódola y Jaravel usando la propuesta de perfiles en vez de deciles, podría considerar que se mantiene una lógica estructural. Si son resultados superiores o no de los cortes clásicos de la población no es propiedad de la ciencia de datos.\\
+- El objetivo es nutrir el menú metodológico para futuras investigaciones y brindar un nuevo punto de vista sobre las variables socioeconómicos.}
+\end{frame}
+
+\section{Cierre}
+\begin{frame}{¡Gracias!}
+¿Preguntas?
+\end{frame}
+
+\end{document}
