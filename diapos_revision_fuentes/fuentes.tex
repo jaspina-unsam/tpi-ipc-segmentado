@@ -26,13 +26,10 @@
 \begin{frame}{¿Dónde estábamos?}
     \begin{itemize}
         \item \textbf{Jaravel (2024)} --- \textit{Distributional Consumer Price Indices}\\
-              Construye D-CPIs por perfil sociodemográfico y muestra que la desigualdad real creció un 45\% más rápido de lo que indica el IPC oficial.
               \vspace{0.4em}
         \item \textbf{Lódola, Busso y Cerimedo (2000)} --- \textit{Sesgos en el IPC: el sesgo plutocrático en Argentina}\\
-              IPC por decil en alta inflación. La inflación alta tuvo comportamiento anti-rico. La inflación nominal baja tuvo comportamiento anti-trabajador.
               \vspace{0.4em}
         \item \textbf{Deaton (1985)} --- \textit{Panel data from time series of cross-sections}\\
-              Fundamento metodológico del seguimiento de cohortes poblacionales y su evolución en el tiempo a traves de la media del grupo (pseudo-panel).
     \end{itemize}
 \end{frame}
 
@@ -59,9 +56,9 @@
                 \vspace{0.4em}
             \item \textbf{Donatiello et al (2014)} --- \textit{Statistical Matching of Income and Consumption Expenditures}
                 \vspace{0.4em}
-            \item \textbf{Schneider y Scharfenaker (2020)} --- \textit{Mixing It Up. The Case for Finite Mixture Models to Study the Distribution of Income}
-                \vspace{0.4em}
             \item \textbf{INDEC} --- \textit{Documentación técnica y diseño de registros}
+                \vspace{0.4em}
+            \item \textbf{Weller, Bowen y Faubert (2020)} --- \textit{Latent Class Analysis: A Guide to Best Practice}
                 \vspace{0.8em}
         \end{itemize}
         \item Ciencias Económicas
@@ -75,40 +72,90 @@
 
 
 \section{El dominio económico}
-\begin{frame}{¿Por qué IPC distribuido? ¿Por qué perfiles?}
-citas de Jaravel y Lódola que justifiquen el estudio del problema.
-citas que habiliten la búsqueda de distintos cortes poblacionales
+\begin{frame}{¿Por qué IPC heterogéneo?}
+    % \begin{block}{Pregunta central}
+    %     ¿Cuál es la tasa de inflación real que enfrenta cada perfil de trabajador argentino, y qué tan vulnerable es su situación cuando se mide con ese índice en lugar del IPC oficial?
+    % \end{block}
+    \begin{block}{¿Qué fuente habilita el uso de perfiles?}
+        \textbf{Jaravel} sugiere que la inflación heterogénea puede ser estudiada más allá del corte clásico por deciles de ingreso. De hecho, usa grupos etarios, grupos étnicos, geografía, características del hogar.
+    \end{block}
+
+    \begin{block}{Jaravel (2024), pp. 9-11}
+        \textit{``This approach can be applied to any socio-demographic group – by income, age, race, gender, occupations, etc.''}
+    \end{block}
+    \begin{block}{Lódola, Busso y Cerimedo (2000), p. 1}
+        \textit{``Esta cuestión [que la inflación no refleje el impacto real en algunos consumidores] se relaciona con si debe existir índices de precios para diferentes grupo, por ejemplo: ancianos y no ancianos, urbanos y rurales, ricos y pobres.''}
+    \end{block}
 \end{frame}
 
 \section{Propuestas de Ciencia de Datos}
-\begin{frame}{¿Qué aporte podemos hacer?}
-composición de metodologías
-- relato del trabajo de Suzuki
-- relato del trabajo de Donatiello
+\begin{frame}{El aporte de la Ciencia de Datos}
+    \begin{itemize}
+        \item Introducir mediante técnicas de aprendizaje automático una manera de distinguir estructuras latentes.
+        \item Integrar bases puntuales (ENGHo) con bases continuas (EPH) para panelizar (o pseudo-panelizar) los perfiles encontrados.
+     \end{itemize}
+% insertar dos screenshots de los papers de Suzuki y Donatiello con dos minipages paralelos en vertical
+    \begin{figure}
+        \begin{minipage}{0.45\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{suzuki.png}
+            % \caption{Suzuki (2020), p. 5}
+        \end{minipage}\hfill
+        \begin{minipage}{0.45\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{donatiello.png}
+            % \caption{Donatiello et al (2014), p. 3}
+        \end{minipage}
+    \end{figure}
 \end{frame}
 
 \begin{frame}{La propuesta metodológica}
-gráfico de diseño/arquitectura metodológica
+\centering\includegraphics[width=0.8\textwidth]{pipeline.png}
 \end{frame}
 
 \begin{frame}{Los datos}
-Reseña de EPH y ENGHo
+\begin{itemize}
+    \item \textbf{ENGHo} --- Encuesta Nacional de Gastos de los Hogares. Base puntual, con información detallada sobre consumo, ingresos, características del hogar, etc. Se realiza cada ~10 años.
+    \item \textbf{EPH} --- Encuesta Permanente de Hogares. Base continua, con información trimestral sobre empleo, ingresos, características del hogar, etc. No tiene información detallada sobre consumo.
+\end{itemize}
+\begin{block}{Los datos en la revisión de fuentes}
+    \small{Jaravel usa la \textbf{Consumer Expenditure Survey} de los Estados Unidos, con estructura similar a la ENGHo. Difieren en la frecuencia de recolección (trimestral vs. cada ~10 años).\\
+    Donatiello et al (2014) hacen un matching entre la EU-SILC (\textbf{EU Statistics on Income and Living Condition}), similar a la EPH, y la HBS (\textbf{Household Budget Survey}), similar a la ENGHo, para obtener un panel de consumo e ingresos. Hacen un matching de un período puntual (año 2011), no panelizan.}
+\end{block}
 \end{frame}
 
 \section{Sobre los resultados}
-\begin{frame}{Resuldatos documentados en las fuentes}
-Output de Suzuki y Donatiello
+\begin{frame}{Resultados documentados en las fuentes}
+
+\centering\includegraphics[width=0.85\textheight]{suzuki_perf.png}
+
+\centering\includegraphics[width=0.85\textheight]{donatiello_perf.png}
+
+
+\end{frame}
+
+
+
+\section{Cierre}
+
+\begin{frame}{Riesgos y limitaciones}
+    \small En la entrevista con Germán Rosati, (Doctor en Ciencias Sociales, investigador del CONICET y profesor de la UNSAM), se discutieron los riesgos y limitaciones de la propuesta metodológica. Algunos de los puntos destacados fueron:
+    \normalsize
+\begin{itemize}
+    \item La selección de variables para el clustering es fundamental para la validación de los perfiles encontrados.
+    \item La estabilidad de los perfiles encontrados en un momento puntual deben ser asumidos como lo suficientemente estables para ser considerados como perfiles de largo plazo.
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Expectativas y validaciones}
-\small{- El foco del trabajo estará puesto en las metodologías de ciencia de datos y su potencial como herramienta de análisis de los artefactos estadísticos del INDEC. A priori, obtener resultados robustos desde la lógica interna de la ciencia de datos es un punto de partida fundamental para que puedan ser integrados en investigaciones de ciencias sociales y ciencias económicas.\\
-- Si logro replicar la tendencia de los resultados de Lódola y Jaravel usando la propuesta de perfiles en vez de deciles, podría considerar que se mantiene una lógica estructural. Si son resultados superiores o no de los cortes clásicos de la población no es propiedad de la ciencia de datos.\\
-- El objetivo es nutrir el menú metodológico para futuras investigaciones y brindar un nuevo punto de vista sobre las variables socioeconómicos.}
+\begin{enumerate}
+    \item Métrica de éxito: replicar tendencia de Lódola/Jaravel con perfiles en vez de deciles
+    \item Objetivo: aporte al menú metodológico de la estadística pública de Argentina, con foco en la Ciencia de Datos como herramienta que aporta valor agregado a la investigación económica y sociológica.
+\end{enumerate}
 \end{frame}
 
-\section{Cierre}
 \begin{frame}{¡Gracias!}
-¿Preguntas?
+\centering\huge¿Preguntas?
 \end{frame}
 
 \end{document}
