@@ -90,6 +90,22 @@ estado_del_arte.xlsx · tpi-ipc-segmentado.Rproj
 
 `docs/notas/` contiene los debriefs originales y la tabla de lecturas con prioridades (must / should / tier-tesina) y modos (completa / parcial / diagonal / cita) — útil cuando hace falta el detalle.
 
+
+## Keywords de búsqueda (Google Scholar / arXiv / SSRN)
+
+| # | Keywords | Objetivo |
+|---|---|---|
+| 1 | `"latent class" "household expenditure"` OR `"mixture model" "consumption patterns"` | Encontrar el espejo aplicado correcto: LCA sobre canastas (no sobre mercado laboral). Reemplazo natural de Suzuki post-pivote. |
+| 2 | `"Engel curves" heterogeneity "mixture"` OR `Lewbel "demand system" heterogeneous` | Fundamentar teóricamente que las elasticidades de gasto varían por perfil. Conecta con Schneider-Scharfenaker desde el lado de demanda. |
+| 3 | `"household-level inflation"` OR `"distributional CPI" clustering` | D-CPIs construidos con clustering ML (no con deciles). Buscar Hobijn-Lagakos, Kaplan-Schulhofer-Wohl, Argente-Lee, Aguiar-Hurst. |
+| 4 | `"ENGH" Argentina 2018..2026` OR `"encuesta nacional de gastos" hogares clustering` | Trabajos argentinos recientes que ya usaron la ENGH 2017/18 con métodos no paramétricos. Validar que no estás reinventando la rueda. |
+| 5 | `CEDLAS Argentina consumo OR canasta 2023..2026` | Camada reciente del CEDLAS/UNLP sobre canastas y consumo (Marchionni, Tornaroli, Trujillo). |
+| 6 | `"typology of consumption" machine learning survey` | Clustering ML aplicado a encuestas de gasto en otros países, para comparar enfoques metodológicos. |
+| 7 | `"reweighting" OR "post-stratification" "income" INDEC` | Confirmar el cambio metodológico del INDEC que mencionó Rosati (abandono del hot-deck). Útil para nota técnica al margen, no para el cuerpo del TP. |
+
+Empezaría por **#1 y #3** — son las que más probabilidad tienen de devolverte el espejo aplicado que te falta.
+
+
 ## Licencia
 
 Código MIT (`LICENSE`). Contenido CC BY 4.0.
