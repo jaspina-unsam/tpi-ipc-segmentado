@@ -1,0 +1,107 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+\usetheme{Rochester}
+\usecolortheme{seagull}
+\beamertemplatenavigationsymbolsempty
+
+\title[Inflación y poder adquisitivo]{Inflación heterogénea\\y poder adquisitivo en Argentina}
+\subtitle{Cuando los precios suben, ¿todos pierden por igual?}
+\author{Javier Spina}
+\institute{ECyT - UNSAM}
+\date{27 de marzo de 2026}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+
+\section{Introducción}
+\begin{frame}{Introducción}
+    \begin{itemize}
+        \item La inflación en Argentina es \textbf{persistente y recurrente}: un fenómeno que atraviesa el debate público y la vida cotidiana.
+        \item El IPC oficial pondera \textbf{``un hogar promedio'' que no existe}.
+        \item Quien gasta el 50\% en alimentos enfrenta una inflación
+        \textbf{distinta} a quien gasta el 50\% en servicios o alquiler.
+    \end{itemize}
+\end{frame}
+
+
+\section{Contexto del problema}
+\begin{frame}{Contexto del problema}
+    \begin{itemize}
+        \item Historia de alta inflación y shocks económicos.
+        \item Las estructuras de gasto varían y evolucionan de forma 
+        \textbf{distinta} según el perfil de cada trabajador.
+        \item Los sectores de menores ingresos pierden poder adquisitivo 
+        en ambos contextos: en \textbf{alta inflación} porque sus canastas 
+        suben más, en \textbf{baja inflación} porque el IPC no representa 
+        su gasto.
+        \item La metodología de medición del INDEC se basa en canastas 
+        de 2004. La actualización prevista \textbf{no se implementó}.
+        \item Muchos asalariados formales estan cayendo bajo la linea de pobreza, incluso midiendo con el IPC oficial.
+    \end{itemize}
+    \vspace{0.5em}
+    \begin{block}{}
+        Hay datos para estudiar esto con mayor precisión.
+    \end{block}
+\end{frame}
+
+\section{Ejemplos y casos de uso}
+\begin{frame}{Ejemplos y casos de uso}
+
+    \begin{table}
+        \centering
+        \small
+        \begin{tabular}{ll}
+            \hline
+            \textbf{Perfil} & \textbf{Gasto dominante}\\
+            \hline
+            Trabajadora informal, NOA & Alimentos\\
+            Empleado formal, Patagonia & Vivienda y servicios\\
+            Docente universitario, CABA & Alimentos y alquiler\\
+            Profesional independiente, Cuyo & Servicios y esparcimiento\\
+            \hline
+        \end{tabular}
+    \end{table}
+
+    \vspace{0.5em}
+    \begin{block}{}
+        El mismo IPC oficial para los cuatro. ¿Tiene sentido?
+    \end{block}
+
+\end{frame}
+
+\section{Definición del problema}
+\begin{frame}{Definición del problema}
+    \begin{block}{Pregunta central}
+        ¿Cuál es la tasa de inflación real que enfrenta cada perfil de trabajador argentino, y qué tan vulnerable es su situación cuando se mide con ese índice en lugar del IPC oficial?
+    \end{block}
+    \vspace{0.5em}
+    \begin{itemize}
+        \item Deflactar salarios con un único IPC distorsiona quién pierde y cuánto.
+        \item Cada trabajador tiene su propia canasta, \textbf{su propia inflación}.
+        \item Clustering para \textbf{descubrir los perfiles} que emergen de los datos.
+    \end{itemize}
+\end{frame}
+
+
+\section{Selección de papers}
+\begin{frame}{Selección de papers}
+    \begin{itemize}
+        \item \textbf{Jaravel (2024)} --- \textit{Distributional Consumer Price Indices}\\
+        Construye D-CPIs por perfil sociodemográfico y muestra que la desigualdad real creció un 45\% más rápido de lo que indica el IPC oficial.
+        \vspace{0.4em}
+        \item \textbf{Lódola, Busso y Cerimedo (2000)} --- \textit{Sesgos en el IPC: el sesgo plutocrático en Argentina}\\
+        IPC por decil en alta inflación. La inflación alta tuvo comportamiento anti-rico. La inflación nominal baja tuvo comportamiento anti-trabajador.
+        \vspace{0.4em}
+        \item \textbf{Deaton (1985)} --- \textit{Panel data from time series of cross-sections}\\
+        Fundamento metodológico del seguimiento de cohortes poblacionales y su evolución en el tiempo a traves de la media del grupo (pseudo-panel).
+    \end{itemize}
+\end{frame}
+
+\end{document}
